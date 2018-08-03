@@ -134,10 +134,8 @@ public class BasicRegistrationActivity extends AppCompatActivity{
 
 
     public void startDetailedRegistration(){
-        Intent intent = new Intent(this,AdvancedRegistrationActivity.class);
+        Intent intent = new Intent(this,VerificationActivity.class);
         startActivity(intent);
-
-
     }
 
 }

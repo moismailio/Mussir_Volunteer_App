@@ -13,10 +13,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
-        android:name="com.o058team.App"
-        >
-
-
+        android:name="com.o058team.App">
 
         <activity android:name=".SplashScreen" android:screenOrientation="portrait">
             <intent-filter>
@@ -32,6 +29,7 @@
         <activity android:name=".MainActivity" android:screenOrientation="portrait"/>
         <activity android:name=".ProfileScreenActivtiy" android:screenOrientation="portrait"/>
         <activity android:name=".MyTeamActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".VerificationActivity" android:screenOrientation="portrait"/>
 
 
         <meta-data
