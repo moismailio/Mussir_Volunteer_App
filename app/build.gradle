@@ -1,0 +1,55 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 26
+    defaultConfig {
+        applicationId "com.o058team.hajjvolunteerapp"
+        minSdkVersion 19
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    compile libraries.supportAppCompat
+    compile libraries.supportDesign
+    compile libraries.supportRecyclerView
+    compile libraries.supportCardView
+
+    compile libraries.butterknife
+    annotationProcessor libraries.butterknifeCompiler
+
+    compile libraries.retrofit
+    compile libraries.retrofitAdapter
+    compile libraries.retrofitConvertor
+
+    compile libraries.okHttp
+    compile libraries.okUrlConnection
+
+    compile libraries.rxLifeCycle
+
+    compile libraries.materilaDialog
+
+
+    compile libraries.GoogleMap
+    compile libraries.GoogleLocations
+
+    compile libraries.GooglePlaces
+
+    compile libraries.FirebaseCore
+    compile libraries.FireaseMessageing
+    compile libraries.FirebaseDatabase
+}
+
+apply plugin: 'com.google.gms.google-services'
+

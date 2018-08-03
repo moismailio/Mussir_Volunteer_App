@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:padding="8dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rounded_dialg"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:padding="8dp"
+            android:gravity="center_vertical"
+            android:text="New Help Request - #23213 "
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textColor="#d3d3d3"
+            android:text="5 min. ago"
+            />
+
+
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#d3d3d3"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        />
+
+
+
+        <!--<TextView-->
+            <!--android:layout_weight="1"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:drawableLeft="@drawable/ic_access_time_black_36dp"-->
+            <!--android:drawablePadding="8dp"-->
+            <!--android:textColor="@color/colorPrimaryDark"-->
+            <!--android:text="Time : 1 min. Ago"-->
+            <!--android:gravity="center_vertical"-->
+            <!--/>-->
+
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_alignParentLeft="true"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:text="Medication"
+            android:background="@drawable/rounded_yellow"
+            android:padding="8dp"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:layout_centerVertical="true"
+            />
+
+
+
+        <TextView
+
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="8dp"
+            android:id="@+id/btnNext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="More"
+            android:textColor="@color/colorPrimaryDark"
+            android:padding="8dp"
+            />
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+</LinearLayout>

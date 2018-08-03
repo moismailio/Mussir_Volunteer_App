@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+
+    >
+
+
+    <ImageView
+        android:id="@+id/ivHeader"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:src="@drawable/splash"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginTop="140dp"
+        />
+
+
+
+
+    <LinearLayout
+        android:layout_below="@+id/ivHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="24dp"
+
+        >
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/tvEmailInput"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="type email here"
+            android:textColor="#fff"
+            android:textColorHint="#fff"
+            >
+        </android.support.design.widget.TextInputEditText>
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/tvPhone"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="type phone here"
+            android:textColor="#fff"
+            android:textColorHint="#fff"
+            android:inputType="phone"
+            >
+
+        </android.support.design.widget.TextInputEditText>
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/tvPass"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="type password here"
+            android:textColor="#fff"
+            android:textColorHint="#fff"
+            android:inputType="textPassword"
+            >
+
+        </android.support.design.widget.TextInputEditText>
+
+
+        <Spinner
+            android:id="@+id/spinnerServicesType"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            >
+        </Spinner>
+
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/white_rounded_button"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="8dp"
+        android:text="Register"
+        android:layout_centerHorizontal="true"
+
+        />
+
+
+
+</RelativeLayout>

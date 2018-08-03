@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimaryDark"
+    >
+
+
+    <ImageView
+        android:visibility="gone"
+        android:id="@+id/ivType"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:src="@drawable/doctor"
+        />
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:textColor="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left|center_vertical"
+        android:layout_marginLeft="8dp"
+        android:layout_gravity="center_vertical"
+        android:text="Medical Volunteer"
+        android:textStyle="bold"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        />
+
+</LinearLayout>
